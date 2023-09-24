@@ -17,6 +17,7 @@ body {
     height: 70%;
     width: 50%;
     gap: 20px 0;
+    padding: 20px;
 }
 
 .screen {
@@ -29,5 +30,71 @@ body {
     border-radius: 3px;
     height: 100px;
     width: 400px;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
+    
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 310px;
+    gap: 0 20px;
+    margin-bottom: 20px;
+}
+
+.action-buttons > button {
+    padding: 20px 60px;
+    border-radius: 3px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    width: 430px;
+    gap: 5px;
+}
+
+.number, 
+.operation,
+.decimal {
+    padding: 20px;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
+}
+
+.clear {
+    background: red;
+    font-size: 16px;
+    color: white;
+}
+
+.delete {
+    background: blue;
+    font-size: 16px;
+    color: white;
+}
+
+.number {
+    background: orange;
+    font-size: 16px;
+    color: white;
+}
+
+.operation {
+    background: yellow;
+    font-size: 16px;
+}
+
+.decimal {
+    font-size: 16px;
+    background: chartreuse;
+}
+
+#previous,
+#current {
+    font-size: 20px;
+    padding-right: 10px;
 }

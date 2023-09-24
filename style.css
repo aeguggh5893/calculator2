@@ -1,100 +1,63 @@
 body {
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
 }
 
-.calculator-body {
+.calculator-body{
+    height: 600px;
+    width: 500px;
+    border: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
-    border-radius: 3px;
-    background-color: rgb(237, 237, 231);
-    height: 70%;
-    width: 50%;
-    gap: 20px 0;
-    padding: 20px;
+    gap: 30px 0;
 }
 
 .screen {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     border: 1px solid black;
-    background-color: white;
-    text-align: end;
-    border-radius: 3px;
     height: 100px;
     width: 400px;
-    margin-bottom: 30px;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-right: 20px;
+}
+
+#previous,
+#current {
+    text-align: end;
 }
 
 .action-buttons {
     display: flex;
     justify-content: space-evenly;
-    width: 310px;
-    gap: 0 20px;
-    margin-bottom: 20px;
+    width: 400px;
 }
 
-.action-buttons > button {
-    padding: 20px 60px;
-    border-radius: 3px;
+.clear,
+.delete {
+    padding: 20px 50px;
 }
 
 .row {
     display: flex;
+    width: 400px;
     justify-content: space-evenly;
-    width: 430px;
-    gap: 5px;
 }
 
-.number, 
-.operation,
-.decimal {
-    padding: 20px;
-    border-radius: 3px;
+.row1 {
+    margin-left: 4px;
 }
 
-button:hover {
-    background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
-}
-
-.clear {
-    background: red;
-    font-size: 16px;
-    color: white;
-}
-
-.delete {
-    background: blue;
-    font-size: 16px;
-    color: white;
-}
-
-.number {
-    background: orange;
-    font-size: 16px;
-    color: white;
-}
-
+.number,
 .operation {
-    background: yellow;
-    font-size: 16px;
+    padding: 20px;
 }
 
-.decimal {
-    font-size: 16px;
-    background: chartreuse;
-}
-
-#previous,
-#current {
-    font-size: 20px;
-    padding-right: 10px;
+button.decimal {
+    padding: 20px 21.5px;
 }
